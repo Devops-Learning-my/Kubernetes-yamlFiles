@@ -5,6 +5,7 @@ metadata:
    labels:
       name: myrep
       type: frontend
+      phase: front
 
 
 # credentials API_key: aksdjfalskdfjlk
