@@ -4,7 +4,8 @@ metadata:
    name: myreplica-app
    labels:
       name: myrep
-      type: backend
+      type: frontend
+
 
 
 spec:
