@@ -1,0 +1,24 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata: 
+   name: nginx-replica
+   labels: 
+     name: replica-app
+     type: backend
+spec:
+   replicas: 3
+   template: 
+        metadata:
+          name: nginxapp
+          labels: 
+            name: nginx-app
+            type: backend
+        spec:
+          containers:
+            - name: nginxapp
+              image: nginx:1.12
+   selector: 
+       matchLabels:
+         type: backend 
+
+ 
